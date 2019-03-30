@@ -1,0 +1,9 @@
+<p>
+  random-dog works! {{dogUrl}}<br>
+</p>
+<h6>{{ now | date: 'hh:mm:ss' }}</h6>
+
+<!--Note4-->
+<h3 *ngIf="dogName">Meet {{dogName}}</h3>
+<p *ngIf="dogName"><i>Age: {{dogName | dogAge: {numIn: 3, unit: ' months'} }}</i></p>
+<img src="{{dogUrl}}" alt="Picture of a dog.">
